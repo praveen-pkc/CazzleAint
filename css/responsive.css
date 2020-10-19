@@ -1,0 +1,100 @@
+@media (max-width: 991px) {
+    .about img {
+        margin-top: 2rem;
+        }
+    .gallery .overlay-in h3  {
+        font-size: 1.5rem;
+        }
+    .navbar .navbar-nav {
+        position: relative;
+        margin-top: 1rem;
+        }
+    header ul li,
+    header ul li a {
+        z-index: 100;
+        background: black;
+        }
+    header ul li {
+        margin: 0!important;
+        }
+    header ul li.p-2 {
+        padding: 0%!important;
+        }
+    header ul li a {
+        margin: auto;
+        width: fit-content;
+        margin-bottom: 1rem;
+        padding-right: 1rem!important;
+        padding-left: 1rem!important;
+        }
+    .navbar {
+        padding-bottom: 0;
+        }
+    .navbar-collapse {
+        z-index: 20;
+        position: absolute;
+        top:65px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 2rem;
+        background: #000000;
+        padding: 2rem;
+        left: 0;
+        right: 0;
+        border-bottom: 3px solid #fdc00f;
+        }
+    }
+@media (min-width: 768px) {
+    .about img {
+        width: 85%;
+        }
+    }
+@media (max-width: 767px) {
+    .home-content {
+        width: 90%;
+        }
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+        }
+    .contact-panel {
+        border: 2px dashed #dfdfdf;
+        margin-bottom: 1rem;
+        padding-top: .8rem;
+        }
+    footer .bottom {
+        text-align: center;          
+        }
+    footer .bottom .right{
+        float: none;
+        margin-top: .5rem;
+        display: inline-block;
+        }
+    }
+@media (max-width: 575px) {
+    .home-content .btn {
+        min-width: 90%;
+        display: block;
+        margin: 1rem 0%!important;
+        }
+    section.more-banner .icons a img {
+        margin: 0!important;
+        }
+    .gallery .overlay-in h3  {
+        font-size: 1rem;
+        }
+    .contact-panel {
+        border: 2px dashed #dfdfdf;
+        margin: 1rem;
+        padding: 1rem;
+        }
+    .contact .btn-normal {
+        width: 100%;
+        }
+    .contact .msg-panel{
+        margin-right:1rem;
+        margin-left:1rem;
+        }
+    }

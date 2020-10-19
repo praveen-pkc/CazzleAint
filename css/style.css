@@ -1,0 +1,295 @@
+:root {
+    --primary-color: #fdc00f;
+    }
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+    }
+img {
+    max-width: 100%;
+    }
+section {
+    padding: 5rem 0;
+    }
+a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .5s;
+    }
+/* text selection */
+::-moz-selection {  
+    color: #ffffff;
+    background: var(--primary-color);
+    }
+::selection {
+    color: #ffffff;
+    background: var(--primary-color);
+    }
+/* Header */
+.navbar {
+    background: #000000;
+    border-bottom: 3px solid var(--primary-color);
+    }
+.navbar .navbar-brand {
+    font-size: 2rem; 
+    font-weight: 500;
+    }
+a.logo span {
+    color: var(--primary-color);
+    }
+.navbar .navbar-nav li a {
+    transition: .5s all;
+    font-size: 1rem;
+    font-weight: 400;
+    }
+.navbar .navbar-nav li.menu a:hover,
+.navbar .navbar-nav li.active a {
+    color: var(--primary-color)!important;
+    transition: .5s all;
+    }
+.navbar .navbar-nav li a.sign-in-btn {
+    background: var(--primary-color);
+    font-size: .85rem;
+    }
+.navbar-toggler {
+        border: none;
+    }
+.navbar button i{
+        font-size: 2rem!important;
+    }
+.navbar button i:hover{
+        color: var(--primary-color)!important;
+    }
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+/* home slider */
+.home-content { 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    width:65%;
+    }   
+.home-content h1 span {
+    color: var(--primary-color);
+    }
+.carousel-inner .carousel-item {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    transition: -webkit-transform 2s ease;
+    transition: transform 2s ease;
+    transition: transform 2s ease, -webkit-transform 2s ease;
+    }
+.carousel-inner .carousel-item.one {
+    background-image: url("../assets/cover1.jpg");
+    }
+.carousel-inner .carousel-item.two {
+    background-image: url("../assets/cover3.jpg");
+    }    
+.carousel-inner .carousel-item.three {
+    background-image: url("../assets/cover1.jpg");
+    }
+.carousel-inner .carousel-item.four {
+    background-image: url("../assets/cover3.jpg");
+    }
+/* indicators custom style  */
+.carousel-indicators li {
+    opacity: 1;
+    background:transparent;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border:2px solid #ffefbd;    
+    }
+.carousel-indicators .active {
+    background-color: #ffefbd;
+    }
+/* buttons */
+.btn { 
+    transition: all 0.5s;
+    border-radius: 0;
+    min-width: 170px; 
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    font-weight: 500;
+    }
+.btn-normal {
+    color: #000;
+    background: var(--primary-color);
+    }  
+.btn-outline,
+.btn-outline:hover {
+    color: var(--primary-color);
+    background: transparent;
+    }
+.btn span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    }
+.btn span::after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    }
+.btn:hover span {
+    padding-right: 18px;
+    }
+.btn:hover span::after {
+    opacity: 1;
+    right: 0;
+    }
+.carousel-indicators {
+    bottom: 10%;
+    }
+/* about us */   
+.title-main {
+    color: var(--primary-color);
+    }
+/* more banner */
+section.more-banner {
+    background-image:url("../assets/bg-fixed.jpg");
+    background-attachment: fixed;
+    background-size: cover; 
+    } 
+section.more-banner .icons a img {
+    transition: .5s all;
+    cursor: pointer;
+    width: 45px;
+    border: 1px solid white;
+    padding: 10px;
+    }
+section.more-banner .icons a img:hover {
+     background: var(--primary-color);
+     border-color: var(--primary-color);
+     transition: .5s all;
+    }
+ /* gallery */
+.gallery .overlay {
+    display: inline-block;
+    position: relative;
+    }
+.gallery .overlay-in {
+    background: #fdc00f80;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    color: #fff;
+    position: absolute;
+    padding: 50% 0;
+    transition: opacity .5s;
+    } 
+.gallery .overlay-in:hover {
+    opacity: 1;
+    transition: opacity .5s;
+    cursor: pointer;
+    }
+   
+.gallery .overlay-in i {
+    border:2px solid #fff;
+    transition: .5s;
+    }
+.gallery .overlay-in i:hover {  
+    background: #fff;
+    transition: .5s;
+    color: #000000;
+    }
+  /* services */
+section.services {
+    background: #f4f4f4;
+  }
+section.services .item {
+    background: #000;
+    transition: .5s;
+    }
+section.services .item img {
+     width: 35%;
+    }
+section.services .item:hover {
+    box-shadow: 0 .5rem 1rem #00000026;
+    transform: scale(1.03);
+    transition: .5s;
+    cursor: pointer;
+    } 
+section.services .item h3::after {
+    content: '';
+    width: 30%;
+    height: 1px;
+    background: #f4f4f4;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: .5s;
+    margin-top: 40px;
+    }
+.services .item {
+    margin-right: .5rem!important;
+    margin-left: .5rem!important;
+    }
+.owl-nav {
+    display: none;
+    }
+/* contact us */
+.form-control {
+    border-radius: 0%;
+    color: #000;
+    border-color: #dfdfdf;
+    }
+::placeholder {
+    color: #dfdfdf!important;
+    }
+/* footer */
+footer {
+    background: url("../assets/bg-footer.png");
+    background-size: cover;
+    background-position: center;
+    }
+footer ul {
+    padding: 0;
+    }
+footer ul li {
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    }
+footer ul li a,
+footer .bottom a{
+    font-size: .85rem;
+    font-weight: 100;
+    color: #a3a3a3!important;
+    cursor: pointer;
+    }
+footer .bottom {
+    border-top: 1px solid #828282b8;
+    }
+footer .logo {
+    font-size: 1.5rem;
+    }
+footer .company a {
+    font-size: 1rem;
+    color: #fff!important;
+    }
+footer ul li a:hover {
+    color:#fff!important;
+    }
+footer .bottom .right {
+    float: right;
+    } 
+footer .bottom .right .side-border{
+    border-right: 1px solid #a3a3a3;
+    border-left: 1px solid #a3a3a3;
+    }
